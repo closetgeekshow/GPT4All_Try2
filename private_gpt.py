@@ -12,7 +12,7 @@ import torch
 
 
 
-loader = DirectoryLoader('D:/OneDrive/Documents/Obsidian/Projects/myVault/', glob="**/*.md",recursive=True, show_progress=True, use_multithreading=True, loader_cls=TextLoader)
+loader = DirectoryLoader('./docStore/', glob="**/*.txt",recursive=True, show_progress=True, use_multithreading=True, loader_cls=TextLoader)
 docs = loader.load()
 len(docs)
 
